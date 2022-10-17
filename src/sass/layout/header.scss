@@ -1,0 +1,32 @@
+@import "../abstract/variables.scss";
+.header {
+    z-index: 100;
+  &__image {
+    object-fit: contain;
+    width: 100vw;
+  }
+  &__container{
+    // position: relative;
+    overflow: hideden;
+  }
+  &__text {
+    color: $White;
+    font-family: "Fraunces", serif;
+    font-size: 6rem;
+    font-weight: 800;
+    left: 50%;
+    letter-spacing: 0.8rem;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20%;
+    transform: translate(-50%, 50%);
+    width: 143rem;
+  }
+  &__arrowDown{
+    position: absolute;
+    bottom:33%;
+    left: 50%;
+    cursor: pointer;
+  }
+}

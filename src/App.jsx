@@ -1,11 +1,12 @@
+import { NavBar, Header } from "./components/Index";
 
- const App = () => {
+const App = () => {
   return (
     <>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum natus dolor repellat odio ipsam nemo quo tempore architecto! Labore ab, accusamus libero cumque eaque optio rerum modi culpa tempore.
+      <NavBar />
+      <Header />
     </>
-  )
-}
+  );
+};
 
-
-export default App
+export default App;
