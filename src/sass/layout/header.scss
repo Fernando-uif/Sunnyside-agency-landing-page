@@ -1,12 +1,12 @@
 @import "../abstract/variables.scss";
 .header {
-    z-index: 100;
+  z-index: 100;
   &__image {
     object-fit: contain;
     width: 100vw;
   }
-  &__container{
-    // position: relative;
+  &__container {
+    position: relative;
 
     overflow: hidden;
   }
@@ -24,9 +24,9 @@
     transform: translate(-50%, 50%);
     width: 143rem;
   }
-  &__arrowDown{
+  &__arrowDown {
     position: absolute;
-    bottom:33%;
+    top: calc(100% / 2.2);
     left: 50%;
     cursor: pointer;
   }
