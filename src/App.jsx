@@ -1,3 +1,4 @@
+import { Body } from "./components/Body";
 import { NavBar, Header } from "./components/Index";
 
 const App = () => {
@@ -5,6 +6,7 @@ const App = () => {
     <>
       <NavBar />
       <Header />
+      <Body/>
     </>
   );
 };

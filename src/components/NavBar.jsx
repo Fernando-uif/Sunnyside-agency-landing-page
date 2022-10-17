@@ -1,6 +1,6 @@
 import React from "react";
 import { getImageUrl } from "../helpers/getImage";
-import "../sass/components/navBar.scss";
+import "../sass/layout/navBar.scss";
 
 export const NavBar = () => {
   return (
