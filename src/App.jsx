@@ -1,10 +1,11 @@
-import { NavBar, Header } from "./components/Index";
+import { NavBar, Header, Content } from "./components/Index";
 
 const App = () => {
   return (
     <>
       <NavBar />
       <Header />
+      <Content/>
     </>
   );
 };
