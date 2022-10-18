@@ -1,13 +1,19 @@
-import { NavBar, Header, Content } from "./components/Index";
-import { Testimonial } from "./components/Testimonial";
+import {
+  NavBar,
+  Header,
+  Content,
+  MarginPhotos,
+  Testimonial,
+} from "./components/Index";
 
 const App = () => {
   return (
     <>
       <NavBar />
       <Header />
-      <Content/>
-      <Testimonial/>      
+      <Content />
+      <Testimonial />
+      <MarginPhotos />
     </>
   );
 };
