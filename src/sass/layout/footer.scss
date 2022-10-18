@@ -1,0 +1,26 @@
+@import '../abstract/variables.scss';
+
+.footer {
+    background-color: $DarkModerateCyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+        text-transform: capitalize;
+        display: flex;
+        justify-content: space-between;
+        &-img{
+            width: 3rem;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+
+        &-img {
+            width: 1.5rem;
+        }
+    }
+}  

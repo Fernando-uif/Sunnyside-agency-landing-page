@@ -1,8 +1,9 @@
 import {
-  NavBar,
-  Header,
   Content,
+  Footer,
+  Header,
   MarginPhotos,
+  NavBar,
   Testimonial,
 } from "./components/Index";
 
@@ -14,6 +15,7 @@ const App = () => {
       <Content />
       <Testimonial />
       <MarginPhotos />
+      <Footer />
     </>
   );
 };

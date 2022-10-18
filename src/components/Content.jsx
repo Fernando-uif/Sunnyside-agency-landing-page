@@ -4,7 +4,7 @@ import "../sass/layout/content.scss";
 
 export const Content = () => {
   return (
-    <div className="content">
+    <main className="content">
       <div className="content__item">
         <div className="content__item-text">
           <div className="content__title">transform your brand</div>
@@ -74,6 +74,6 @@ export const Content = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };

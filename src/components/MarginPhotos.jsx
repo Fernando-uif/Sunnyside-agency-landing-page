@@ -4,7 +4,7 @@ import "../sass/layout/marginPhotos.scss";
 
 export const MarginPhotos = () => {
   return (
-    <div className="marginPhotos">
+    <section className="marginPhotos">
       <div className="marginPhotos__item">
         <img
           src={getImageUrl("desktop/image-gallery-cone.jpg")}
@@ -33,6 +33,6 @@ export const MarginPhotos = () => {
           className="marginPhotos__img"
         />
       </div>
-    </div>
+    </section>
   );
 };

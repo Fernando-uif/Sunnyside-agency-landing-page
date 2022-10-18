@@ -4,7 +4,7 @@ import "../sass/layout/testimonial.scss";
 export const Testimonial = () => {
   return (
     <>
-      <div className="testimonial">
+      <section className="testimonial">
         <div className="testimonial__title">client testimonial</div>
         <div className="testimonial__container">
           <div className="testimonial__card">
@@ -50,7 +50,7 @@ export const Testimonial = () => {
             <div className="testimonial__role">business owner</div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
