@@ -2,7 +2,6 @@
 .header {
   z-index: 100;
   &__image {
-    object-fit: contain;
     width: 100vw;
   }
   &__container {
@@ -22,7 +21,7 @@
     text-transform: uppercase;
     top: 20%;
     transform: translate(-50%, 50%);
-    width: 143rem;
+    width: 100rem;
   }
   &__arrowDown {
     position: absolute;

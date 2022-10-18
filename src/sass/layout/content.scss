@@ -1,0 +1,41 @@
+@import "../abstract/variables.scss";
+
+.content {
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &-text {
+      padding: 8rem 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-family: $FontFamily2;
+    margin-bottom: 2.5rem;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    color: $DarkGrayishBlue;
+    margin-bottom: 2.5rem;
+    align-self: flex-start;
+  }
+
+  &__info {
+    font-family: $FontFamily2;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  &__img {
+    width: 100%;
+  }
+}
