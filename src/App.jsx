@@ -6,6 +6,7 @@ const App = () => {
       <NavBar />
       <Header />
       <Content/>
+      
     </>
   );
 };

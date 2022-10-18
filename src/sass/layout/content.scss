@@ -1,9 +1,14 @@
 @import "../abstract/variables.scss";
+@import "../abstract/mixins.scss";
 
 .content {
   &__item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    &-imgContent {
+      position: relative;
+    }
     &-text {
       padding: 8rem 10rem;
       display: flex;
@@ -13,11 +18,7 @@
   }
 
   &__title {
-    font-size: 4rem;
-    font-weight: 800;
-    text-transform: capitalize;
-    font-family: $FontFamily2;
-    margin-bottom: 2.5rem;
+    @include titleCards;
   }
 
   &__description {
@@ -25,6 +26,18 @@
     color: $DarkGrayishBlue;
     margin-bottom: 2.5rem;
     align-self: flex-start;
+    &-img {
+      position: absolute;
+      width: 50rem;
+      top: 60%;
+      // left:16rem;
+      text-align: center;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
   }
 
   &__info {
@@ -37,5 +50,28 @@
   }
   &__img {
     width: 100%;
+  }
+
+  &__images {
+    &-title1 {
+      @include titleCards {
+        color: $DarkModerateCyan;
+      }
+    }
+    &-title2 {
+      @include titleCards {
+        color: $DarkDesaturatedCyan;
+      }
+    }
+    &-description1 {
+      color: $DarkDesaturatedCyan;
+      font-size: 2.4rem;
+      width: 50rem;
+    }
+    &-description2 {
+      color: $DarkBlue;
+      font-size: 2.4rem;
+      width: 50rem;
+    }
   }
 }

@@ -5,7 +5,6 @@ import "../sass/layout/content.scss";
 export const Content = () => {
   return (
     <div className="content">
-      
       <div className="content__item">
         <div className="content__item-text">
           <div className="content__title">transform your brand</div>
@@ -27,7 +26,11 @@ export const Content = () => {
 
       <div className="content__item">
         <div className="content__item-img">
-          <img src={getImageUrl('desktop/image-stand-out.jpg')} alt='' className="content__img"/>
+          <img
+            src={getImageUrl("desktop/image-stand-out.jpg")}
+            alt=""
+            className="content__img"
+          />
         </div>
         <div className="content__item-text">
           <div className="content__title">stand out to the right audience</div>
@@ -41,8 +44,35 @@ export const Content = () => {
       </div>
 
       <div className="content__item">
-        <div className="content__item-imgContent"></div>
-        <div className="content__item-imgContent"></div>
+        <div className="content__item-imgContent">
+          <img
+            className="content__img"
+            src={getImageUrl("desktop/image-graphic-design.jpg")}
+            alt=""
+          />
+          <div className="content__description content__description-img">
+            <div className="content__images-title1">graphic design</div>
+            <div className="content__images-description1">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients'
+              attention.
+            </div>
+          </div>
+        </div>
+        <div className="content__item-imgContent">
+          <img
+            className="content__img"
+            src={getImageUrl("desktop/image-photography.jpg")}
+            alt="orange.jpg"
+          />
+          <div className="content__description content__description-img">
+            <div className="content__images-title2 ">photography</div>
+            <div className="content__images-description2">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
