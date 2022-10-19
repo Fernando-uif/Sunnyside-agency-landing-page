@@ -1,26 +1,49 @@
-@import '../abstract/variables.scss';
+@import "../abstract/variables.scss";
 
 .footer {
-    background-color: $DarkModerateCyan;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &__item {
-        text-transform: capitalize;
+  background-color: #8ed5c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container{
+    padding:6rem 0rem;
+  }
+  &__item {
+    &-logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 4rem;
+    }
+    &-img{
+        width: 20rem;
+    }
+    &-info {
         display: flex;
-        justify-content: space-between;
-        &-img{
-            width: 16rem;
-        }
+        width: 30rem;
+        justify-content: space-around;
+        margin-bottom: 7rem;
     }
 
-    &__social {
+    &-social {
         display: flex;
-        justify-content: space-between;
-
-        &-img {
-            width: 1.5rem;
-        }
+        justify-content: space-evenly;
+        width:20rem;
     }
-}  
+  }
+  &__social{
+    &-img{
+        cursor:pointer;
+    }
+    &-container{
+        display: flex;
+        justify-content: center;
+    }
+  }
+  &__info{
+    font-size: 1.8rem;
+    text-transform:capitalize;
+    color:$DarkModerateCyan;
+    font-weight: 600;
+    cursor:pointer;
+  }
+}
