@@ -2,6 +2,7 @@
 @import "../abstract/mixins.scss";
 
 .content {
+  
   &__item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -51,7 +52,11 @@
   &__img {
     width: 100%;
   }
-
+  &__item {
+    &-img {
+      line-height: 0;
+    }
+  }
   &__images {
     &-title1 {
       @include titleCards {
