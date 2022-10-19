@@ -5,52 +5,60 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &__container{
-    padding:6rem 0rem;
+
+  &__container {
+    padding: 6rem 0rem;
   }
+
   &__item {
     &-logo {
       display: flex;
       justify-content: center;
       margin-bottom: 4rem;
     }
-    &-img{
-        width: 20rem;
+
+    &-img {
+      width: 20rem;
     }
+
     &-info {
-        display: flex;
-        width: 30rem;
-        justify-content: space-around;
-        margin-bottom: 7rem;
+      display: flex;
+      width: 30rem;
+      justify-content: space-around;
+      margin-bottom: 7rem;
     }
 
     &-social {
-        display: flex;
-        justify-content: space-evenly;
-        width:20rem;
+      display: flex;
+      justify-content: space-evenly;
+      width: 20rem;
     }
   }
-  &__social{
-    &-img{
-        cursor:pointer;
-      &:hover{
+
+  &__social {
+    &-img {
+      cursor: pointer;
+
+      &:hover {
         filter: brightness(0) saturate(100%) invert(100%) sepia(94%) saturate(167%) hue-rotate(166deg) brightness(109%) contrast(100%);
       }
     }
-    
-    &-container{
-        display: flex;
-        justify-content: center;
+
+    &-container {
+      display: flex;
+      justify-content: center;
     }
   }
-  &__info{
+
+  &__info {
     font-size: 1.8rem;
-    text-transform:capitalize;
-    color:$DarkModerateCyan;
+    text-transform: capitalize;
+    color: $DarkModerateCyan;
     font-weight: 600;
-    cursor:pointer;
-    &:hover{
-      color:$White;
+    cursor: pointer;
+
+    &:hover {
+      color: $White;
     }
   }
 }
