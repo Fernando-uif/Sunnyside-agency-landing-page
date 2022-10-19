@@ -1,15 +1,18 @@
 @import "../abstract/variables.scss";
+
 .navBar {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
   position: absolute;
   width: calc(100vw - 8rem);
-    z-index: 100;
+  z-index: 100;
+
   &__logo {
     width: 20rem;
     cursor: pointer;
   }
+
   &__items {
     display: flex;
     width: 32rem;
@@ -18,9 +21,10 @@
     font-weight: 400;
     align-items: center;
     cursor: pointer;
-    color:$White;
+    color: $White;
     font-size: 1.3rem;
   }
+
   &__item {
     &-4 {
       color: $DarkBlue;
@@ -30,6 +34,11 @@
       padding: 1.2rem 2.4rem;
       font-family: $FontFamily2;
       font-weight: 800;
+      transition:background .2s, color .2s linear;
+      &:hover {
+        background-color:rgb(110,208,253);
+        color:$White;
+      }
     }
   }
 }
