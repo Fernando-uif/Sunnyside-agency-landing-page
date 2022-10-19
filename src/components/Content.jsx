@@ -13,7 +13,7 @@ export const Content = () => {
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </div>
-          <div className="content__info">learn more</div>
+          <div className="content__info content__info-yellow">learn more</div>
         </div>
         <div className="content__item-img">
           <img
@@ -39,7 +39,7 @@ export const Content = () => {
             photographers, videographers and copywriters, we'll build and extend
             your brand in digital places.
           </div>
-          <div className="content__info">learn more</div>
+          <div className="content__info content__info-red">learn more</div>
         </div>
       </div>
 

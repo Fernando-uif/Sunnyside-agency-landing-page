@@ -1,10 +1,9 @@
 .marginPhotos {
-    display: flex;
-&__item{
-    line-height:0;
-}
-    &__img {
-        width: 100%;
-    }
-
+  display: flex;
+  &__item {
+    line-height: 0;
+  }
+  &__img {
+    width: 100%;
+  }
 }
