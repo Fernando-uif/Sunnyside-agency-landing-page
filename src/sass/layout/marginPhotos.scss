@@ -1,8 +1,17 @@
+@import '../abstract/variables.scss';
+
 .marginPhotos {
   display: flex;
+
+  @media screen and (max-width:$tabletL) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   &__item {
     line-height: 0;
   }
+
   &__img {
     width: 100%;
   }

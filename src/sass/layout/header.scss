@@ -47,6 +47,10 @@
     left: 50%;
     cursor: pointer;
 
+    @media screen and (max-width:$tabletL) {
+      left: 48%;
+    }
+
     @media screen and (max-width:$tabletM) {
       left: 48%;
       width: 2rem;
