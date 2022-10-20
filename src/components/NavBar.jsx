@@ -19,7 +19,13 @@ export const NavBar = () => {
           src={getImageUrl("logos/logo.svg")}
           alt="logo.svg"
         />
-        {width > 770 ? <NavBarText /> : <NavBarResponsive />}
+        {
+          width > 770
+          ? 
+            <NavBarText /> 
+          : 
+            <NavBarResponsive />
+        }
       </nav>
     </>
   );
