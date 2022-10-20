@@ -19,14 +19,26 @@
     position: absolute;
     text-align: center;
     text-transform: uppercase;
-    top: 20%;
+    top: 30%;
     transform: translate(-50%, 50%);
     width: 100rem;
+
+     @media screen and (max-width:$laptopL) {
+        font-size: 4rem;
+    }
   }
   &__arrowDown {
     position: absolute;
     top: calc(100% / 2.2);
     left: 50%;
     cursor: pointer;
+     @media screen and (max-width:$tabletM) {
+        left:48%;
+        width: 3rem;
+    }
+     @media screen and (max-width:$mobileL) {
+        width: 2rem;
+        left:50%;
+    }
   }
 }

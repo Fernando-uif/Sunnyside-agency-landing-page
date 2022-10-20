@@ -6,7 +6,7 @@ export const Content = () => {
   return (
     <main className="content">
       <div className="content__item">
-        <div className="content__item-text">
+        <div className="content__item-text content__item-1">
           <div className="content__title">transform your brand</div>
           <div className="content__description">
             We are a full-service creative agency specializing in helping brands
@@ -32,7 +32,7 @@ export const Content = () => {
             className="content__img"
           />
         </div>
-        <div className="content__item-text">
+        <div className="content__item-text content__item-2">
           <div className="content__title">stand out to the right audience</div>
           <div className="content__description">
             Using a collaborative formula of designers, researchers,
