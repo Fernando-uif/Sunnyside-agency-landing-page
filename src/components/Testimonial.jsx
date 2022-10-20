@@ -17,11 +17,6 @@ export const Testimonial = () => {
             <div className="testimonial__description">
               we put our trust in Sunnyside and they delivered, making sure our
               needs were met and deadlines were always hit. 
-
-
-
-
-              
             </div>
             <div className="testimonial__name">emily r.</div>
             <div className="testimonial__role">marketing director</div>

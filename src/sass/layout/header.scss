@@ -1,14 +1,18 @@
 @import "../abstract/variables.scss";
+
 .header {
   z-index: 100;
+
   &__image {
     width: 100vw;
   }
+
   &__container {
     position: relative;
     line-height: 0;
     overflow: hidden;
   }
+
   &__text {
     color: $White;
     font-family: "Fraunces", serif;
@@ -23,22 +27,42 @@
     transform: translate(-50%, 50%);
     width: 100rem;
 
-     @media screen and (max-width:$laptopL) {
-        font-size: 4rem;
+    @media screen and (max-width:$laptopL) {
+      font-size: 4rem;
+    }
+
+    @media screen and (max-width:$tabletM) {
+      font-size: 2rem;
+      top: 40%;
+    }
+
+    @media screen and (max-width:$mobileM) {
+      font-size: 1.5rem;
     }
   }
+
   &__arrowDown {
     position: absolute;
     top: calc(100% / 2.2);
     left: 50%;
     cursor: pointer;
-     @media screen and (max-width:$tabletM) {
-        left:48%;
-        width: 3rem;
+
+    @media screen and (max-width:$tabletM) {
+      left: 48%;
+      width: 2rem;
     }
-     @media screen and (max-width:$mobileL) {
-        width: 2rem;
-        left:50%;
+
+    @media screen and (max-width:$mobileL) {
+      left: 50%;
+    }
+
+    @media screen and (max-width:$mobileL) {
+      top: 48%;
+      left: 48%;
+    }
+
+    @media screen and (max-width:$mobileM) {
+      width: 1.5rem;
     }
   }
 }
