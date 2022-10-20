@@ -7,7 +7,6 @@ export const NavBarResponsive = () => {
   const handleOpenNav = () => {
     setIsNav(!isNav);
   };
-  console.log(isNav, "Tenemos el valor del nav");
   return (
     <>
       <div className="navBar__icon" onClick={() => handleOpenNav()}>
