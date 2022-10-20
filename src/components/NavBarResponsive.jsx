@@ -3,9 +3,9 @@ import { getImageUrl } from "../helpers/getImage";
 import { MenuNavBar } from "./MenuNavBar";
 
 export const NavBarResponsive = () => {
-  const [isNav, setIsNav] = useState(true);
+  const [isNav, setIsNav] = useState(false);
   const handleOpenNav = () => {
-    // setIsNav(!isNav);
+    setIsNav(!isNav);
   };
   console.log(isNav, "Tenemos el valor del nav");
   return (

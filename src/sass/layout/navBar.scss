@@ -99,6 +99,15 @@
       text-transform: capitalize;
       color: black;
     }
+
+    &-4 {
+      background-color: $Yellow;
+      padding: 1rem;
+      border-radius: 6.5rem;
+      padding: 1rem 2rem;
+      font-weight: 800;
+      font-family: $FontFamily2;
+    }
   }
 
 }
