@@ -1,4 +1,5 @@
 @import "../abstract/variables.scss";
+@import "../abstract/animations.scss";
 
 .navBar {
   display: flex;
@@ -16,7 +17,7 @@
       width: 15rem;
     }
 
-    @media screen and (max-width:$mobileM) {
+    @media screen and (max-width: $mobileM) {
       width: unset;
     }
   }
@@ -95,11 +96,34 @@
     right: 0;
     top: 2rem;
     width: 15rem;
-
+    @media screen and (max-width: $tabletL) {
+      width: 25rem;
+      height: 25rem;
+    }
     &-item {
       font-size: 1rem;
       text-transform: capitalize;
       color: black;
+      cursor: pointer;
+      position: relative;
+      &:not(:last-child):after {
+        content: "";
+        width: 0%;
+        position: absolute;
+        height: 0.5rem;
+        left: 0;
+        bottom: 0;
+        background-color: $DarkBlue;
+        opacity: 0.22;
+        border-radius: 0.4rem;
+        transition: width 0.4s;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+      @media screen and (max-width: $tabletL) {
+        font-size: 2rem;
+      }
     }
 
     &-4 {
@@ -109,13 +133,16 @@
       padding: 1rem 2rem;
       font-weight: 800;
       font-family: $FontFamily2;
-
+      cursor: pointer;
+      transition: background-color 0.2s, color 0.2s linear;
       &:hover {
         background-color: $White;
         color: darken($SoftRed, 1);
-        outline: .1rem solid darken($SoftRed, 1);
+        outline: 0.1rem solid darken($SoftRed, 1);
       }
     }
   }
-
+  &__fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+  }
 }

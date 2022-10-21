@@ -11,9 +11,14 @@ export const Header = () => {
             src={getImageUrl("desktop/image-header.jpg")}
             alt="image-header.jpg"
             className="header__image"
+            onClick={() => window.location.reload()}
           />
           <div className="header__text">we are creatives</div>
-          <img src={getImageUrl("icon/icon-arrow-down.svg")} alt="arrow" className="header__arrowDown" />
+          <img
+            src={getImageUrl("icon/icon-arrow-down.svg")}
+            alt="arrow"
+            className="header__arrowDown"
+          />
         </div>
       </div>
     </>

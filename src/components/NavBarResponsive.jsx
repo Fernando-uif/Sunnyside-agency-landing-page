@@ -15,7 +15,7 @@ export const NavBarResponsive = () => {
           alt="icon-hamburger.svg"
         />
       </div>
-      {isNav && <MenuNavBar />}
+      {isNav && <MenuNavBar isActive={isNav}/>}
     </>
   );
 };

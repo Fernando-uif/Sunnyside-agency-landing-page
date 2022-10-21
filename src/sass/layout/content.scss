@@ -35,16 +35,14 @@
         padding: 10rem;
       }
 
-      @media screen and (max-width:$tabletM) {
+      @media screen and (max-width: $tabletM) {
         padding: 3rem 5rem;
-
       }
     }
 
     &-1 {
       @media screen and (max-width: $tabletL) {
         order: 2;
-
       }
     }
   }
@@ -55,8 +53,8 @@
     @media screen and (max-width: $laptopL) {
       font-size: 3rem;
     }
-     @media screen and (max-width:$mobileM) {
-        font-size:2rem;
+    @media screen and (max-width: $mobileM) {
+      font-size: 2rem;
     }
   }
 
@@ -81,8 +79,8 @@
     @media screen and (max-width: $laptopL) {
       line-height: 1.5;
     }
-     @media screen and (max-width:$mobileM) {
-        font-size: 1.5rem;
+    @media screen and (max-width: $mobileM) {
+      font-size: 1.5rem;
     }
   }
 
@@ -104,6 +102,7 @@
   &__info {
     &-red {
       &::after {
+        transition: opacity 0.2s;
         content: "";
         position: absolute;
         width: 104%;
@@ -123,6 +122,7 @@
 
     &-yellow {
       &::after {
+        transition: opacity 0.2s;
         content: "";
         position: absolute;
         width: 104%;
@@ -161,7 +161,7 @@
         font-size: 3rem;
       }
 
-      @media screen and (max-width:$mobileL) {
+      @media screen and (max-width: $mobileL) {
         margin-bottom: 0;
       }
     }
@@ -175,7 +175,7 @@
         font-size: 3rem;
       }
 
-      @media screen and (max-width:$mobileL) {
+      @media screen and (max-width: $mobileL) {
         margin-bottom: 0;
       }
     }
@@ -190,7 +190,7 @@
         font-size: 1.4rem;
       }
 
-      @media screen and (max-width:$mobileM) {
+      @media screen and (max-width: $mobileM) {
         width: 29rem;
         font-size: 1rem;
       }
@@ -206,11 +206,10 @@
         font-size: 1.4rem;
       }
 
-      @media screen and (max-width:$mobileM) {
+      @media screen and (max-width: $mobileM) {
         width: 29rem;
         font-size: 1rem;
       }
-
     }
   }
 }

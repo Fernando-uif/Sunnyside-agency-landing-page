@@ -1,9 +1,11 @@
 import React from "react";
 
-export const MenuNavBar = () => {
+export const MenuNavBar = ({ isActive }) => {
+  console.log(isActive, "Tenemos si esta activado");
+
   return (
     <>
-      <div className="navBar__container">
+      <div className={`navBar__container ${isActive ? "navBar__fadeIn" : ""}`}>
         <span className="navBar__container-arrow"></span>
         <div className="navBar__menu">
           <div className="navBar__menu-item">about</div>
