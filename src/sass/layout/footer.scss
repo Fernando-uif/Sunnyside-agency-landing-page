@@ -40,7 +40,8 @@
       cursor: pointer;
 
       &:hover {
-        filter: brightness(0) saturate(100%) invert(100%) sepia(94%) saturate(167%) hue-rotate(166deg) brightness(109%) contrast(100%);
+        filter: brightness(0) saturate(100%) invert(100%) sepia(94%)
+          saturate(167%) hue-rotate(166deg) brightness(109%) contrast(100%);
       }
     }
 
